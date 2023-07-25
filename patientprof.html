@@ -1,0 +1,115 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+</head>
+<body>
+  <h1>Personal Details</h1>
+  
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="" disabled>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="" disabled>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" value="" disabled>
+
+
+    
+    <input type="submit" value="Submit" disabled>
+  </form>
+  
+  <script>
+    // Fetch person details from the server using AJAX or other methods
+    // and populate the form fields with the retrieved values
+    
+    // Example of populating the form fields using JavaScript
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Retrieve person details from the server and assign them to variables
+      var name = "John Doe";
+      var email = "johndoe@example.com";
+      var phone = "123-456-7890";
+      
+      // Populate the form fields with the retrieved values
+      document.getElementById("name").value = name;
+      document.getElementById("email").value = email;
+      document.getElementById("phone").value = phone;
+      
+      // Enable the submit button if needed
+      document.querySelector('input[type="submit"]').disabled = false;
+    });
+  </script>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Person Details</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Person Details</h1>
+
+  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>johndoe@example.com</td>
+      <td>123-456-7890</td>
+    </tr>
+  </table>
+
+  <!-- Button that redirects to another HTML file -->
+  <br>
+  <style>
+    /* Center the button */
+    .center-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    /* Style the button */
+    .center-button button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+  <div class="center-button">
+
+<a href="medicalrec.html">
+    <button>Next</button>
+  </a>
+</br>
+
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor's Medical Records</title>
+  <title>Logged In User</title>
+  <style>
+      .username {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          font-weight: bold;
+      }
+  </style>
+</head>
+<body>
+  <?php
+  session_start();
+
+  // Check if the user is logged in
+  if (isset($_SESSION['username'])) {
+      $username = $_SESSION['username'];
+      echo '<div class="username">Logged in as: ' . $username . '</div>';
+  }
+  ?>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+      background-color: #7ba0b7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Doctor's Medical Records</h1>
+  
+  <table>
+    <tr>
+      <th>Patient Name</th>
+      <th>Date</th>
+      <th>Diagnosis</th>
+      <th>Treatment</th>
+      <th>Drugs</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>2023-02-15</td>
+      <td>Headache</td>
+      <td>Prescribed painkillers and rest</td>
+      <td>Tylenol</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>2023-01-11</td>
+      <td>Common Cold</td>
+      <td>Prescribed over-the-counter medication and rest</td>
+      <td>Advil</td>
+    </tr>
+    <!-- Add more rows for additional records -->
+  </table>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+/*Pseudo-class : Based on state; hover around, color changes when yoou click on it*/
+li:first-child{
+    border: 2px solid red;
+}
+
+input:focus{
+    background-color: lightblue;
+}
+
+/*Pseudo-element: Part of an element e.g the first line of the paragraph*/
+p::first-line{
+    color: blueviolet;
+    font-size: 100px;
+}
+
+p::first-letter{
+    color: brown;
+    font-weight: bold;
+}
+
+div{
+    border: 2px solid black;
+}
+
+.wrapper {
+    width: 400px;
+    font-size: 1em;
+}
+.px {
+    width: 200px;
+}
+.vw {
+    width: 10vw;
+}
+.em {
+    width: 10em;
+}
+
+/*is inside this ems class*/
+.ems li {
+    font-size: 1.3em;
+}

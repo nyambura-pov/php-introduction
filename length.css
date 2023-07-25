@@ -1,0 +1,21 @@
+div{
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.box{
+    background-color: lightblue;
+}
+.wrapper {
+    font-size: 1em;
+}
+.px {
+    width: 200px;
+}
+.vw {
+    width: 10vw;
+}
+.em {
+    width: 10em;
+}

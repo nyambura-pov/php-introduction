@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <style>
+    .username {
+      text-align: right;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    <form action="loggingin.php" method="post"></form>
+  <h2>Welcome</h2>
+  <?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+    echo "<div class='username'>Logged in as: $username</div>";
+  }
+  ?>
+  <p>Content of your home page goes here...</p>
+</body>
+</html>

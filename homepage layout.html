@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+        body {
+      background-image: url('photo2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Login &#9662;</a>
+        <ul class="dropdown">
+          <li><a href="login.php?type=patient">Patient Login</a></li>
+          <li><a href="login.php?type=doctor">Doctor Login</a></li>
+          <li><a href="login.php?type=pharmacist">Pharmacist Login</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Register &#9662;</a>
+        <ul class="dropdown">
+          <li><a href="register.html?type=patient">Patient Registration</a></li>
+          <li><a href="register.html?type=doctor">Doctor Registration</a></li>
+          <li><a href="register.html?type=pharmacist">Pharmacist Registration</a></li>
+        </ul>
+      </li>
+      <li><a href="patienttable.html">Patient Table</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <h1>Welcome to Our Medical Portal</h1>
+      <p>Connect with patients, doctors, and pharmacists easily!</p>
+    </section>
+    <section class="features">
+      <!-- Add some features about your website here -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>

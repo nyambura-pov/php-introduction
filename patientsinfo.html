@@ -1,38 +1,46 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Patient's records</title>
-    </head>
-        <body>
-            <h1>Patient Records</h1>
-            <form>
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
-                <br><br>
+<head>
+    <title>Patient's records</title>
+</head>
+<body>
+    <h1>Patient Records</h1>
+    <p>Kindly fill in the details below:</p>
+    <form method="post" action="connection.php">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+        <br><br>
 
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
-                <br><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+        <br><br>
 
-                <label for="email">E-mail address:</label>
-                <input type="text" id="email" name="email" placeholder="Enter your email address" required>
-                <br><br>
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
 
-                <label for="ID no">ID number:</label>
-                <input type="text" id="ID no" name="ID no" placeholder="Enter your ID number" required>
-                <br><br> 
+        <label for="email">E-mail address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <br><br>
 
-                <label for="phone no">Phone number:</label>
-                <input type="number" id="phone no" name="phone no" placeholder="Enter your phone number" required>
-                <br><br>
+        <label for="IDno">ID number:</label>
+        <input type="text" id="IDno" name="IDno" placeholder="Enter your ID number" required>
+        <br><br> 
 
+        <label for="phoneNo">Phone number:</label>
+        <input type="tel" id="phoneNo" name="phoneNo" placeholder="Enter your phone number" required>
+        <br><br>
 
-
-            <label for="insurance">Do you have an insurance?</label>
-            <input type="checkbox" name="insurance" id="insurance">
-
-  <br>
-  <!--adding a submit button--> 
-    <input type="submit" value="Submit">
+        <br>
+        <!-- adding a submit button -->
+        <input type="submit" value="Submit">
     </form>
-        </body>
+</body>
 </html>
+
+
+

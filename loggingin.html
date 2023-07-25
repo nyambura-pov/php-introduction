@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <h2>Welcome</h2>
+  <p>Kindly enter your username and password:</p>
+  <form action="loggingin.php" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="usertype">User Type:</label>
+    <select id="usertype" name="usertype">
+      <option value="patient">Patient</option>
+      <option value="doctor">Doctor</option>
+    </select><br><br>
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>

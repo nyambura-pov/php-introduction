@@ -4,7 +4,7 @@
     </head>
         <body>
             <h1>Doctor's Records</h1>
-            <form>
+            <form action="processdoc.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 <br><br>
@@ -13,13 +13,12 @@
                 <input type="text" id="specialty" name="specialty" placeholder="Enter your specialty" required>
                 <br><br>
 
-                <label for="ID no">ID number:</label>
-                <input type="text" id="ID no" name="ID no" placeholder="Enter your ID number" required>
+                <label for="IDnum">ID number:</label>
+                <input type="text" id="ID_no" name="ID_no" placeholder="Enter your ID number" required>
                 <br><br> 
 
   <!--adding a submit button--> 
     <input type="submit" value="Submit">
     </form>
-    <p>A link to the <a href = "drugsinfo.html" > drug catalogue </a></p>
         </body>
 </html>
